@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restoran Maida</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f5f0;
+    color:#333;
+}
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#a67c52;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#8b6843;
+}
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#a67c52;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.features{
+    padding:60px 10%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#a67c52;
+    margin-bottom:15px;
+}
+
+.stats{
+    background:#a67c52;
+    color:white;
+    padding:70px 10%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:80px;
+    text-align:center;
+}
+
+.stats h2{
+    font-size:50px;
+}
+
+.menu-preview{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.menu-preview h2{
+    color:#a67c52;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.menu-items{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+}
+
+.item{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact{
+    padding:80px 10%;
+    text-align:center;
+    background:white;
+}
+
+.contact h2{
+    color:#a67c52;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.stats{
+    gap:40px;
+}
+}
+</style>
+
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Restoran Maida</h1>
+        <p>Mjesto gdje se tradicija, vrhunski okusi i ugodan ambijent spajaju u nezaboravno gastronomsko iskustvo.</p>
+        <a href="#" class="btn">Rezerviši Sto</a>
+    </div>
+</section>
+
+<section class="about">
+    <h2>Dobrodošli</h2>
+    <p>
+        Restoran Maida poznat je po domaćoj kuhinji, kvalitetnim sastojcima
+        i prijatnoj atmosferi. Bilo da dolazite na porodični ručak,
+        poslovni sastanak ili večeru sa prijateljima, naše osoblje će
+        se pobrinuti da svaki trenutak bude poseban.
+    </p>
+</section>
+
+<section class="features">
+
+    <div class="card">
+        <h3>🍽 Domaća Kuhinja</h3>
+        <p>Tradicionalna jela pripremljena prema provjerenim receptima.</p>
+    </div>
+
+    <div class="card">
+        <h3>⭐ Vrhunska Usluga</h3>
+        <p>Ljubazno osoblje i profesionalan pristup svakom gostu.</p>
+    </div>
+
+    <div class="card">
+        <h3>👨‍👩‍👧‍👦 Ugodan Ambijent</h3>
+        <p>Idealno mjesto za porodična okupljanja i proslave.</p>
+    </div>
+
+</section>
+
+<section class="stats">
+
+    <div>
+        <h2>15+</h2>
+        <p>Godina iskustva</p>
+    </div>
+
+    <div>
+        <h2>5000+</h2>
+        <p>Zadovoljnih gostiju</p>
+    </div>
+
+    <div>
+        <h2>7</h2>
+        <p>Dana u sedmici</p>
+    </div>
+
+</section>
+
+<section class="menu-preview">
+
+    <h2>Izdvojeno iz ponude</h2>
+
+    <div class="menu-items">
+
+        <div class="item">
+            <h3>Roštiljski Specijaliteti</h3>
+            <p>Svježe pripremljena jela sa roštilja vrhunskog kvaliteta.</p>
+        </div>
+
+        <div class="item">
+            <h3>Domaća Jela</h3>
+            <p>Bogati okusi tradicionalne bosanske kuhinje.</p>
+        </div>
+
+        <div class="item">
+            <h3>Deserti</h3>
+            <p>Slatki završetak svakog obroka uz domaće kolače.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <h2>Posjetite Nas</h2>
+
+    <p><strong>Adresa:</strong> Zenica, Bosna i Hercegovina</p>
+    <br>
+
+    <p><strong>Radno Vrijeme:</strong> Pon - Ned | 08:00 - 23:00</p>
+    <br>
+
+    <p><strong>Telefon:</strong> +387 XX XXX XXX</p>
+
+</section>
+
+<footer>
+    © 2026 Restoran Maida | Sva prava zadržana
+</footer>
+
+</body>
+</html>
